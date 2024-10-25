@@ -47,10 +47,8 @@ int main(int argc, char **argv) {
             pHeap->size = 0;
             pHeap->H = (int *)malloc((n + 1) * sizeof(int));
         } else if (strcmp(instruction, "PrintArray") == 0) {
-            fprintf(stdout, "Instruction: PrintArray\n");
             printArray(V, n);
         } else if (strcmp(instruction, "PrintHeap") == 0) {
-            fprintf(stdout, "Instruction: PrintHeap\n");
             printHeap(pHeap, V);
         } else if (strcmp(instruction, "BuildHeap") == 0) {
             fprintf(stdout, "Instruction: BuildHeap\n");
