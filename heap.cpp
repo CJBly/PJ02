@@ -97,8 +97,11 @@ void printHeap(HEAP *pHeap, ELEMENT **V) {
         return;
     }
     printf("Instruction: PrintHeap\n");
+    printf("Capacity = %d, size = %d\n", pHeap->capacity, pHeap->size);
+    
+    // Print the contents of the heap
     for (int i = 1; i <= pHeap->size; i++) {
-        printf("Index: %d, Key: %lf, Pos: %d\n", V[pHeap->H[i]]->index, V[pHeap->H[i]]->key, V[pHeap->H[i]]->pos);
+        printf("H[%d] = %d\n", i, pHeap->H[i]);
     }
 }
 
