@@ -20,7 +20,7 @@ void heapify(HEAP *pHeap, ELEMENT **V, int index) {
     int right = 2 * index + 1;
 
     if (left <= pHeap->size && V[pHeap->H[left]]->key < V[pHeap->H[smallestEntry]]->key) {
-        smallest = left;
+        smallestEntry = left;
     }
     if (right <= pHeap->size && V[pHeap->H[right]]->key < V[pHeap->H[smallestEntry]]->key) {
         smallestEntry = right;
