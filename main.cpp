@@ -15,16 +15,6 @@ void printArray(ELEMENT **V, int n) {
     }
 }
 
-void printHeap(HEAP *pHeap, ELEMENT **V) {
-    if (!pHeap) {
-        fprintf(stderr, "Error: heap is NULL\n");
-        return;
-    }
-    for (int i = 1; i <= pHeap->size; i++) {
-        printf("Index: %d, Key: %lf, Pos: %d\n", V[pHeap->H[i]]->index, V[pHeap->H[i]]->key, V[pHeap->H[i]]->pos);
-    }
-}
-
 int main(int argc, char **argv) {
     if (argc != 3) {
         fprintf(stderr, "Usage: ./PJ2 <I-File> <O-File>\n<I-File> is the input file\n<O-File> is the output file\n");
