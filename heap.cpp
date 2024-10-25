@@ -101,3 +101,14 @@ void printHeap(HEAP *pHeap, ELEMENT **V) {
         printf("Index: %d, Key: %lf, Pos: %d\n", V[pHeap->H[i]]->index, V[pHeap->H[i]]->key, V[pHeap->H[i]]->pos);
     }
 }
+
+void printArray(ELEMENT **V, int n) {
+    if (!V) {
+        fprintf(stderr, "Error: array is NULL\n");
+        return;
+    }
+    printf("Instruction: PrintArray\n");
+    for (int i = 1; i <= n; i++) {
+        printf("%d %lf %d\n", V[i]->index, V[i]->key, V[i]->pos);
+    }
+}
