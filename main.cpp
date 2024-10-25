@@ -71,9 +71,9 @@ int main(int argc, char **argv) {
                 fprintf(stderr, "Error: heap is empty\n");
             } else {
                 ELEMENT *minElement = extractMin(pHeap, V);
-                if (minElement) {
-                    fprintf(stdout, "Element with index %d and key %lf extracted from the heap\n", minElement->index, minElement->key);
-                }
+                //if (minElement) {
+                    //fprintf(stdout, "Element with index %d and key %lf extracted from the heap\n", minElement->index, minElement->key);
+                //}
             }
         } else if (strcmp(instruction, "DecreaseKey") == 0) {
             fprintf(stdout, "Instruction: DecreaseKey %d %lf\n", index, newKey);
