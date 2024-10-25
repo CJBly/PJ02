@@ -40,7 +40,7 @@ int main(int argc, char **argv) {
     double newKey;
 
     while (1) {
-        int res = nextInstruction(instruction, &index, &newKey);
+        nextInstruction(instruction, &index, &newKey);
 
         if (strcmp(instruction, "Stop") == 0) {
             fprintf(stdout, "Instruction: Stop\n");
