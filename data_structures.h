@@ -1,5 +1,5 @@
 #ifndef DATA_STRUCTURES_H
-#define DTA_STRUCTURES_H
+#define DATA_STRUCTURES_H
 
 typedef struct TAG_ELEMENT{
     int index; // Index of the element
