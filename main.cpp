@@ -5,16 +5,6 @@
 #include "heap.h"
 #include "data_structures.h"
 
-void printArray(ELEMENT **V, int n) {
-    if (!V) {
-        fprintf(stderr, "Error: array is NULL\n");
-        return;
-    }
-    for (int i = 1; i <= n; i++) {
-        printf("Index: %d, Key: %lf, Pos: %d\n", V[i]->index, V[i]->key, V[i]->pos);
-    }
-}
-
 int main(int argc, char **argv) {
     if (argc != 3) {
         fprintf(stderr, "Usage: ./PJ2 <I-File> <O-File>\n<I-File> is the input file\n<O-File> is the output file\n");
