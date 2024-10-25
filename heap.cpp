@@ -92,7 +92,11 @@ void decreaseKey(HEAP *pHeap, ELEMENT **V, int index, double newKey) {
 
 // Print the elements of the heap
 void printHeap(HEAP *pHeap, ELEMENT **V) {
-    printf("Heap elements:\n");
+    if (!pHeap) {
+        fprintf(stderr, "Error: heap is NULL\n");
+        return;
+    }
+    printf("Instruction: PrintHeap\n");
     for (int i = 1; i <= pHeap->size; i++) {
         printf("Index: %d, Key: %lf, Pos: %d\n", V[pHeap->H[i]]->index, V[pHeap->H[i]]->key, V[pHeap->H[i]]->pos);
     }
