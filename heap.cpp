@@ -68,6 +68,7 @@ ELEMENT* extractMin(HEAP *pHeap, ELEMENT **V) {
 
     ELEMENT *minElement = V[pHeap->H[1]];
     pHeap->H[1] = pHeap->H[pHeap->size];
+    V[pHeap->H[1]]->pos = 1;
     pHeap->size--;
     heapify(pHeap, V, 1);
 
